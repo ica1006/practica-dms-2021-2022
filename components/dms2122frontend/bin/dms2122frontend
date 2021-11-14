@@ -55,6 +55,10 @@ def get_home():
 def get_student():
     return StudentEndpoints.get_student(auth_service)
 
+@app.route("/student/answer", methods=['GET'])
+def get_answer():
+    return StudentEndpoints.get_answer(auth_service)
+
 @app.route("/teacher", methods=['GET'])
 def get_teacher():
     return TeacherEndpoints.get_teacher(auth_service)
