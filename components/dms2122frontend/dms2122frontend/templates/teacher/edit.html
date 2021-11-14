@@ -1,0 +1,18 @@
+{% extends "base_logged_in.html" %}
+{% block title %}{% block subtitle %}{% endblock %}Teacher{% endblock %}
+{% block contentheading %}Teachers panel{% endblock %}
+{% block maincontent %}
+    {% block teachercontent %}
+<h2>Pregunta 1</h2>
+<h3 style="padding-left: 40px;">Puntuaci&oacute;n de la pregunta:&nbsp;&nbsp;&nbsp;<input min="0" name="puntuacion" step="0.25" type="number" value="1"/></h3>
+<h3 style="padding-left: 40px;">Penalizaci&oacute;n de la pregunta:&nbsp;&nbsp; <input min="0" name="penalizacion" step="0.05" type="number" value="0,25" /></h3>
+<h3 style="padding-left: 40px;">Enunciado de la pregunta:&nbsp;&nbsp; <input id="identificador" name="nombre" size="" type="text" value="&iquest;Qu&eacute; pa&iacute;s es m&aacute;s grande? " /></h3>
+<h4 style="padding-left: 40px;">Respuesta Correcta:&nbsp;&nbsp; <input id="identificador" name="nombre" size="" type="text" value="Estados Unidos " /></h4>
+<h4 style="padding-left: 40px;">Respuesta Incorrecta 1:&nbsp;&nbsp; <input id="identificador" name="nombre" size="" type="text" value="España" /></h4>
+<h4 style="padding-left: 40px;">Respuesta Incorrecta 2:&nbsp;&nbsp; <input id="identificador" name="nombre" size="" type="text" value="Brasil" /></h4>
+<h4 style="padding-left: 40px;">Respuesta Incorrecta 3:&nbsp;&nbsp; <input id="identificador" name="nombre" size="" type="text" value="Andorra" /></h4>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><a href="/teacher/questions"> <button>Volver</button></a><a href="/teacher/questions"> <button>Aceptar</button> </a></p>
+    {% endblock %}
+{% endblock %}
