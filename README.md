@@ -1,6 +1,11 @@
 ![pylint score](https://github.com/Kencho/practica-dms-2021-2022/workflows/pylint%20score/badge.svg)
 ![mypy typechecking](https://github.com/Kencho/practica-dms-2021-2022/workflows/mypy%20typechecking/badge.svg)
 
+## Authors
+- [Steven Paul Alba Alba](https://github.com/saa1002)
+- [Ivan Cortes Aliende](https://github.com/ica1006)
+- [Alberto Diez Busto](https://github.com/adb1004)
+
 # DMS course project codebase, academic year 2021-2022
 
 The goal of this project is to implement a basic online evaluation appliance deployed across several interconnected services.
