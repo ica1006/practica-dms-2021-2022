@@ -1,0 +1,73 @@
+{% extends "base_logged_in.html" %}
+{% block title %}{% block subtitle %}{% endblock %}Student{% endblock %}
+{% block contentheading %}Students panel{% endblock %}
+{% block maincontent %}
+    {% block studentcontent %}
+	<h1>Preguntas contestadas</h1>
+<table class="Tabla" style="height: 72px; width: 318px;" width="700">
+<thead>
+<tr style="width: 118.733px;">
+<td style="width: 128.433px; text-align: center;">Estado</td>
+<td style="width: 173.567px; ">Finalizado</td>
+</tr>
+</thead>
+<tbody>
+<tr style="width: 152.5px;">
+<td style="width: 128.433px; text-align: center;">Tiempo empleado</td>
+<td style="width: 173.567px;">3 minutos 56 segundos</td>
+</tr>
+<tr>
+<td style="width: 128.433px; text-align: center;">Puntos</td>
+<td style="width: 173.567px;">2,00/3,00</td>
+</tr>
+<tr>
+<td style="width: 128.433px; text-align: center;">Calificaci&oacute;n</td>
+<td style="width: 173.567px;">66,67 de 100,00</td>
+</tr>
+</tbody>
+</table>
+<h2>Pregunta 1</h2>
+<p>Correcta</p>
+<p>Punt&uacute;a 1,00 sobre 1,00</p>
+<h3>Enunciado de la pregunta</h3>
+<p>&iquest;Qu&eacute; no es un deporte?</p>
+<form name="pregunta1">
+<p><input id="esp" disabled="disabled" name="pais" type="radio" value="Espa&ntilde;a" />Futbol</p>
+<p><input id="eeuu" checked="checked" disabled="disabled" name="pais" type="radio" value="EEUU" />DIversi&oacute;n</p>
+<p><input id="bra" disabled="disabled" name="pais" type="radio" value="Brasil" />Baloncesto</p>
+<p><input id="and" disabled="disabled" name="pais" type="radio" value="Andorra" />Hockey</p>
+</form>
+<h4>Retroalimentaci&oacute;n</h4>
+<p>La respuesta correcta es 'Diversi&oacute;n'</p>
+<p>&nbsp;</p>
+<h2>Pregunta 2</h2>
+<p>Incorrecta</p>
+<p>Punt&uacute;a 0,00 sobre 1,00</p>
+<h3>Enunciado de la pregunta</h3>
+<p>&iquest;De donde son los madrile&ntilde;os?</p>
+<form name="pregunta2">
+<p><input id="esp" disabled="disabled" name="pais" type="radio" value="Espa&ntilde;a" />Madrid</p>
+<p><input id="bra" disabled="disabled" name="pais" type="radio" value="Brasil" />Burgos</p>
+<p><input id="eeuu" checked="checked" disabled="disabled" name="pais" type="radio" value="EEUU" />Murcia</p>
+<p><input id="and" disabled="disabled" name="pais" type="radio" value="Andorra" />Alicante</p>
+</form>
+<h4>Retroalimentaci&oacute;n</h4>
+<p>La respuesta correcta es 'Madrid'</p>
+<p>&nbsp;</p>
+<h2>Pregunta 3</h2>
+<p>Correcta</p>
+<p>Punt&uacute;a 1,00 sobre 1,00</p>
+<h3>Enunciado de la pregunta</h3>
+<p>&iquest;Qu&eacute; pa&iacute;s es m&aacute;s grande?</p>
+<form name="pregunta3">
+<p><input id="esp" disabled="disabled" name="pais" type="radio" value="Espa&ntilde;a" />Espa&ntilde;a</p>
+<p><input id="bra" disabled="disabled" name="pais" type="radio" value="Brasil" />Brasil</p>
+<p><input id="and" disabled="disabled" name="pais" type="radio" value="Andorra" />Andorra</p>
+<p><input id="eeuu" checked="checked" disabled="disabled" name="pais" type="radio" value="EEUU" />Estados Unidos</p>
+</form>
+<h4>Retroalimentaci&oacute;n</h4>
+<p>La respuesta correcta es 'Estados Unidos'</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><a href="/student"> <button>Finalizar revisión</button> </a></p>
+    {% endblock %}
+{% endblock %}
