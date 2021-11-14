@@ -1,0 +1,32 @@
+{% extends "base_logged_in.html" %}
+{% block title %}{% block subtitle %}{% endblock %}Teacher{% endblock %}
+{% block contentheading %}Teachers panel{% endblock %}
+{% block maincontent %}
+    {% block teachercontent %}
+	<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<h2 style="color: #2e6c80; text-align: center;">Preguntas contestadas:</h2>
+<div style="text-align: center;">
+    <table style="margin: 0px auto; width: 625px; height: 96px;" border="1">
+    <tbody>
+    <tr style="height: 18px;">
+    <td style="height: 18px; text-align: center; width: 200px;">Preguntas</td>
+    <td style="width: 100px; height: 18px; text-align: center;">Puntuaci&oacute;n</td>
+    <td style="text-align: center; width: 100px;">Penalizaci&oacute;n</td>
+    <td style="width: 2000px; height: 18px; text-align: center;">Descripci&oacute;n</td>
+    <td style="width: 125px; text-align: center;">% de respuesta</td>
+    </tr>
+    <tr style="height: 18px;">
+    <td style="height: 18px; text-align: center; width: 200px;"><a href="/teacher/editquestions">Pregunta 1</a></td>
+    <td style="width: 100px; height: 18px; text-align: center;">0,75</td>
+    <td style="text-align: center; width: 100px;">0,25</td>
+    <td style="width: 2000px; height: 18px; text-align: center;">&iquest;Qu&eacute; pa&iacute;s es m&aacute;s grande?</td>
+    <td style="width: 125px; text-align: center;">90%</td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><a href="/teacher/students"> <button>Crear Pregunta</button> </a></p>
+    {% endblock %}
+{% endblock %}
