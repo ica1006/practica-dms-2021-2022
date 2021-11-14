@@ -1,0 +1,17 @@
+{% extends "base_logged_in.html" %}
+{% block title %}{% block subtitle %}{% endblock %}Teacher{% endblock %}
+{% block contentheading %}Teachers panel{% endblock %}
+{% block maincontent %}
+    {% block teachercontent %}
+	<h2 style="text-align: right;"></h2><a href="/teacher/questions"> <button>Volver</button> </a>
+<h2 style="color: #2e6c80; text-align: center;">Previsualizar pregunta:</h2>
+<p style="text-align: center;">&iquest;Qu&eacute; pa&iacute;s es m&aacute;s grande? </p>
+<p style="padding-left: 850px;"><input id="esp" name="pais" type="radio" value="Espa&ntilde;a" />España</p>
+<p style="padding-left: 850px;"><input id="bra" name="pais" type="radio" value="Brasil" />Brasil</p>
+<p style="padding-left: 850px;"><input id="and" name="pais" type="radio" value="Andorra" />Andorra</p>
+<p style="padding-left: 850px;"><input id="eeuu"  name="pais" type="radio" value="EEUU" />Estados Unidos</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><a href="/teacher/editquestions"> <button>Editar</button></a><a href="/teacher/check"> <button>Finalizar</button> </a></p>
+    {% endblock %}
+{% endblock %}
