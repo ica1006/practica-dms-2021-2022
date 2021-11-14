@@ -1,0 +1,19 @@
+{% extends "base_logged_in.html" %}
+{% block title %}{% block subtitle %}{% endblock %}Teacher{% endblock %}
+{% block contentheading %}Teachers panel{% endblock %}
+{% block maincontent %}
+    {% block teachercontent %}
+	<h1 style="color: #2e6c80; text-align: center;">Crear pregunta:</h1>
+<h2>Pregunta&nbsp;&nbsp; <input min="1" name="numero pregunta" step="1" type="number" value="1" /></h2>
+<h3 style="padding-left: 40px;">Puntuaci&oacute;n de la pregunta:&nbsp;&nbsp;&nbsp;<input min="0" name="puntuation" step="0.25" type="number" value="1" /></h3>
+<h3 style="padding-left: 40px;">Penalizaci&oacute;n de la pregunta:&nbsp;&nbsp; <input min="0" name="penalizacion" step="0.05" type="number" value="0" /></h3>
+<h3 style="padding-left: 40px;">Enunciado de la pregunta:&nbsp;&nbsp; <input id="identificador" name="nombre" size="" type="text" /></h3>
+<h3 style="padding-left: 40px;">Respuesta Correcta:&nbsp;&nbsp; <input id="identificador" name="nombre" size="" type="text"/></h3>
+<h3 style="padding-left: 40px;">Respuesta Incorrecta 1:&nbsp;&nbsp; <input id="identificador" name="nombre" size="" type="text" /></h3>
+<h3 style="padding-left: 40px;">Respuesta Incorrecta 2:&nbsp;&nbsp; <input id="identificador" name="nombre" size="" type="text"/></h3>
+<h3 style="padding-left: 40px;">Respuesta Incorrecta 3:&nbsp;&nbsp; <input id="identificador" name="nombre" size="" type="text"/></h3>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><a href="/teacher/questions"> <button>Volver</button></a><a href="/teacher/questions"> <button>Aceptar</button> </a></p>
+    {% endblock %}
+{% endblock %}
