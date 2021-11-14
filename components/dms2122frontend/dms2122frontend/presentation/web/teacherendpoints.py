@@ -104,8 +104,8 @@ class TeacherEndpoints():
             return redirect(url_for('get_home'))
         name = session['user']
         return render_template('teacher/previsualize.html', name=name, roles=session['roles'])
-        @staticmethod
         
+    @staticmethod
     def get_check(auth_service: AuthService) -> Union[Response, Text]:
         """ Handles the GET requests to the questions administration endpoint.
         Args:
