@@ -80,3 +80,27 @@ The following macros/components are provided:
     - Parameters:
       - `color_class` (See `button`)
       - `content` (See `button`)
+
+## Arquitectura del frontend
+
+Trataremos el diseño del frontend y sus actualizaciones necesarias para implementar determinadas funciones
+
+  - Archivo dms2122frontend
+Necesitamos crear los metodos necesarios para tareas especificas como por ejemplo:
+      Funcion de crear preguntas para el profesor
+      Funcion de editar preguntas para el profesor
+      Funcion de contestar preguntas para el alumno
+      Funcion de revision de las preguntas para el alumno
+Y mas funciones necesarias para que sea lo mas completa posible.
+
+  - Web
+Para poder implementar nuestros metodos creados en el fichero anterior del frontend, deberemos actualizar nuestros ficheros           studentendpoints.py y teacherendpoints.py de la parte web. Los cuales se actualizan con otros metodos necesarios para que haga determinadas  funciones dentro de la misma web de nuestra practica, como pueden ser navegar entre los diferentes htmls dependiendo de las rutas creadas en  el frontend.
+
+  - Templates
+Por ultimo necesitamos que los html, los cuales seran los ficheros que se muestren en la web y seran modificados para mejoras o arreglos de la misma, puedan estar organizados. Por ello, hemos creado dos carpetas, una de student y otra de teacher en las cuales se crearan otros ficheros para cada seccion que necesite nuestros metodos creados en el frontend (organizados en los ficheros web mencionados anteriormente).
+Ficheros creados para algunos metodos, por ejemplo:
+      Fichero check para alumnos (funcion de revision)
+      Fichero answer para alumnos (funcion de contestar)
+      Fichero student para alumnos (interfaz de alumnos)
+      Fichero create para profesor (funcion crear preguntas)
+      Fichero edit para profesor (funcion editar preguntas)
